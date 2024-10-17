@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.OrderPayment_Activity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/AnimationView10"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:elevation="5dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/paymnt"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Address Details:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <!--<RelativeLayout
+        android:id="@+id/RL_addressdetl"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/RL_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageViewAddress"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/outline_location_city_24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/LAddress"
+        android:paddingBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306">
+    <Spinner
+        android:id="@+id/Spinner_register_City"
+        android:hint="Select your city"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewName"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPersonName"
+        android:padding="0dp"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/RL_address"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/RL_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/imageViewAddressdetl"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/baseline_location_on_24blck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/LAddressdetail"
+            android:paddingBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.306">
+            <EditText
+                android:id="@+id/Addressdetailed"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageViewName"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:inputType="textPersonName"
+                android:padding="0dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:text="Order Details:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text1"
+            android:background="@drawable/border"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:layout_weight="2"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/subtotal"
+            android:background="@drawable/border"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/codfeelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/text2"
+            android:background="@drawable/border"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COD Fee"
+            android:layout_weight="2"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/codcharges"
+            android:background="@drawable/border"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/inactive"
+        android:padding="5dp"
+        android:text="Delivery Fee"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text3"
+            android:background="@drawable/border"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_weight="2"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/total"
+            android:background="@drawable/border"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:text="Choose Payment Method:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtoncash"
+            android:text="Cash  "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/baseline_wallet_24"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtoncard"
+            android:text="Card  "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/baseline_credit_card_24"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/cardpymntlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="18dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="1dp">
+        <EditText
+            android:id="@+id/expirydate"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:hint="MM/YY"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" /></com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="1dp">
+
+            <EditText
+                android:id="@+id/securitycode"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:hint="Security code"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" /></com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+        android:id="@+id/backbtn"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+        android:backgroundTint="@color/bgcolor"
+        android:text="BACK TO CART"
+            android:layout_marginLeft="5dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:cornerRadius="6dp" />
+    <Button
+        android:id="@+id/Paybtn"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/bgcolor"
+        android:text="PAY NOW"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="6dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

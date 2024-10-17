@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "857355385132",
+    "project_id": "assignment-2-66274",
+    "storage_bucket": "assignment-2-66274.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857355385132:android:28a221882d124aaecd5489",
+        "android_client_info": {
+          "package_name": "com.rikzah.assignment_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz0ZJREZu5yp3DIF3EIxGGXFX4U27L5FI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

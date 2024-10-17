@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.rikzah.assignment_2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_restaurant"
+        android:name="com.rikzah.assignment_2.RestaurantsFragment"
+        android:label="Restaurants"
+        tools:layout="@layout/fragment_restaurants" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.rikzah.assignment_2.ui.Profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.rikzah.assignment_2.ui.Categories.CategoriesFragment"
+        android:label="@string/category"
+        tools:layout="@layout/fragment_categories" />
+
+    <fragment
+        android:id="@+id/nav_newproducts"
+        android:name="com.rikzah.assignment_2.NewProductsFragment"
+        android:label="@string/new_products"
+        tools:layout="@layout/fragment_new_products" />
+    <fragment
+        android:id="@+id/nav_myorders"
+        android:name="com.rikzah.assignment_2.MyOrdersFragment"
+        android:label="@string/my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/nav_mycart"
+        android:name="com.rikzah.assignment_2.MyCartFragment"
+        android:label="@string/my_cart"
+        tools:layout="@layout/fragment_my_cart" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.rikzah.assignment_2.Support_Fragment"
+        android:label="Support"
+        tools:layout="@layout/fragment_support_" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.rikzah.assignment_2.LogOut_Fragment"
+        android:label="Log Out"
+        tools:layout="@layout/fragment_log_out_" />
+
+</navigation>

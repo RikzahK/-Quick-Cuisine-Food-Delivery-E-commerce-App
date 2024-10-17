@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo1"
+        android:label="QuickCuisine AdminPanel"
+        android:roundIcon="@drawable/applogo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ASSIGNMENT_2">
+        <activity
+            android:name=".Login_MainActivity"
+            android:exported="false" />
+       <!-- <activity
+            android:name=".AdminEdit_MainActivity"
+            android:exported="false" />-->
+        <activity
+            android:name=".RestrntRepEdit_Activity"
+            android:exported="false" />
+        <!--<activity
+            android:name=".Admin_MainActivity"
+            android:exported="false" />-->
+        <activity
+            android:name=".RestrntRep_MainActivity"
+            android:exported="false" />
+       <!-- <activity
+            android:name=".AdminLogin_Activity"
+            android:exported="false" />-->
+        <activity
+            android:name=".UserType_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

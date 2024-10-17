@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RestrntRep_MainActivity">
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/loginbg"
+        android:orientation="vertical"
+        android:foregroundGravity="center_vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/AnimationView65"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:elevation="5dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/restrnt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=" Admin Panel"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/AnimationViewadd"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16dp"
+            app:lottie_autoPlay="true"
+            android:background="#0FEA985B"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/addproduct"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/Adddish"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/bgcolor"
+            android:paddingLeft="10dp"
+            android:text="ADD Dish"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:cornerRadius="7dp" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/AnimationViewremove"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16dp"
+            app:lottie_autoPlay="true"
+            android:background="#0FEA985B"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/removeproduct"
+            android:elevation="5dp"/>
+        <Button
+            android:id="@+id/removedish"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/bgcolor"
+            android:paddingLeft="10dp"
+            android:text="remove Dish"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:cornerRadius="7dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

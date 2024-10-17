@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F0EE"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    android:elevation="7dp"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/orderitemsss">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/orderhistory_prdctimg"
+                    android:layout_width="105dp"
+                    android:layout_height="90dp"
+                    android:background="@color/bglight"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/schezwnrice"
+                    app:riv_corner_radius="17dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp" android:layout_height="wrap_content"
+                        android:text="Order Date"
+                        android:layout_weight="1"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/orderhistory_orderday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Producte"
+                        android:layout_weight="1"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp" android:layout_height="wrap_content"
+                        android:text="Order Time"
+                        android:layout_weight="1"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/orderhistory_ordertime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Producte"
+                        android:layout_weight="1"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="90dp" android:layout_height="wrap_content"
+                        android:text="Item Name"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/orderhistory_prdctname"
+                        android:layout_width="160dp"
+                        android:layout_height="43dp"
+                        android:textStyle="bold"
+                        android:text="Product Name"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Item Price"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/orderhistory_prdctprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Product Name"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Qty Ordered"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/orderhistory_prdctqty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Product Name"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Price"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/orderhistory_prdcttotalprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Product Name"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

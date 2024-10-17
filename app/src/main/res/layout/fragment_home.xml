@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progressbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/loadinganim" />
+
+
+
+    <!--<ProgressBar
+         android:id="@+id/progressbar"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true" />-->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+        android:elevation="3dp"
+        android:id="@+id/search_box1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:background="@drawable/search"
+        android:padding="13dp"
+        android:hint="Search Your Item Here..."
+        android:drawablePadding="5dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/search_rec1" />
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/imageslider"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="6dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="4000"
+            app:iss_delay="1000"
+            app:iss_corner_radius="15"
+            app:iss_title_background="@drawable/ofr22"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:drawableRight="@drawable/ctgryiesicon"
+                android:textStyle="bold"/>
+            <!--<TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/view_all_Categories"
+                   android:layout_weight="1"
+                   android:text="View All"
+                   android:gravity="end"
+                   android:layout_marginRight="7dp"
+                   android:textSize="16sp"
+                   android:textColor="@color/purple_700"/>-->
+        </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="5dp"
+               android:id="@+id/Categories_rec" />
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="12dp"
+           android:weightSum="2"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:text="Popular Items "
+               android:textColor="@color/black"
+               android:textSize="19sp"
+               android:layout_weight="1"
+               android:drawableRight="@drawable/hot"
+               android:textStyle="bold"/>
+          <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/view_all_popularitems"
+               android:layout_weight="1"
+               android:text="View All"
+               android:gravity="end"
+               android:layout_marginRight="7dp"
+               android:textSize="16sp"
+               android:textColor="@color/purple_700"/>
+       </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="5dp"
+               android:id="@+id/popular_rec" />
+
+       </LinearLayout>
+       </ScrollView>
+   </RelativeLayout>

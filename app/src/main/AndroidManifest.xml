@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- permissions for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/applogo1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ASSIGNMENT_2"
+        tools:targetApi="31">
+        <activity
+            android:name=".Splash_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name=".Activities.RestaurantRep_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword_Activity"
+            android:exported="false" />
+        -->
+        <activity
+            android:label="Checkout"
+            android:name=".Activities.OrderPayment_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OrderConfirmed_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Login_SignUp_Activity"
+            android:exported="false" />
+        <activity
+            android:label="Detailed"
+            android:name=".Activities.Detailed_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewAll_Activity"
+            android:label="View All"
+            android:exported="false" />
+
+        <activity
+            android:label="Sign Up"
+            android:name=".Activities.SignUp_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activities.Intro_Activity"
+            android:exported="false" />
+        <!--
+ <activity
+            android:name=".Activities.UserType_Activity"
+            android:exported="false" />
+        -->
+        <activity
+            android:label="Login"
+            android:name=".Activities.Login_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ASSIGNMENT_2.NoActionBar" />
+    </application>
+
+</manifest>

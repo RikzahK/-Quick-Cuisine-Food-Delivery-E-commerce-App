@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="2dp"
+    android:backgroundTint="#33E4E2E2"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:text="What is Quick Cuisine?"
+            android:padding="13dp"
+            android:id="@+id/faq_question"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+            android:textColor="@color/black"/>
+
+
+   </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:id="@+id/expandable_layout">
+
+        <TextView
+            android:id="@+id/faq_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
+            android:text="Quick Cuisine is a food delivery app developed by Rikzah Khattal. It allows users to order a variety of dishes from different restaurants using their mobile devices."
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

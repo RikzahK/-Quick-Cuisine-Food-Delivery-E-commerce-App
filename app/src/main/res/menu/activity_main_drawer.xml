@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/baseline_add_business_24"
+            android:title="Restaurants" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/baseline_category_24"
+            android:title="@string/category" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_mycart"
+            android:icon="@drawable/baseline_shopping_cart_24"
+            android:title="@string/my_cart" />
+        <item
+            android:id="@+id/nav_myorders"
+            android:icon="@drawable/baseline_playlist_add_check_24"
+            android:title="@string/my_orders" />
+
+
+        <item
+            android:id="@+id/nav_newproducts"
+            android:icon="@drawable/baseline_autorenew_24"
+            android:title="@string/new_products" />
+
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/baseline_support_agent_24"
+            android:title="Support" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Log Out" />
+    </group>
+</menu>

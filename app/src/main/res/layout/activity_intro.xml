@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Intro_Activity">
+        <!-- ViewPager -->
+
+        <!-- Next Button -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/screen_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/tab_indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.412"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="@color/bgcolor"
+            android:text="NEXT"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- TabLayout -->
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="230dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#E1E0E0"
+            android:text="SKIP"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_indicator"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="140dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabBackground="@drawable/indicator_selector"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/btn_get_started"
+            android:layout_width="172dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="68dp"
+            android:backgroundTint="@color/bgcolor"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
